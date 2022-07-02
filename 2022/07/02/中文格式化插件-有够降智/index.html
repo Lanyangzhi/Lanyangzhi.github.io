@@ -19,27 +19,34 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"lanyangzhi.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script>
 
-    <meta name="description" content="Jenks流水线操作SpringBoot项目Mysql故障：com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowedMysqlServer version: 8.0.27 解决方案：在链接后面加入allowPublicKeyRetrieval=t">
+    <meta name="description" content="起因在挑选 Markdown 插件的时候看到了这篇文章：给你的 Markdown 挑挑刺——语法检查器入门与进阶里面提到了中英文之间应当留有空白。  于是乎我下载了文章中推荐的插件 AutoCorrect，也就是今天的主角。 主角登场我像往常一样打开 VSC 开始写 Bug，发现自己的字体不见了。  我寻思我也妹干啥啊，赶快打开设置看看，看了好像也没什么问题。本来也不该有问题，因为我前几天用得好好">
 <meta property="og:type" content="article">
-<meta property="og:title" content="K8s学习笔记-5">
-<meta property="og:url" content="https://lanyangzhi.github.io/2022/04/10/K8s%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-5/index.html">
+<meta property="og:title" content="中文格式化插件--有够降智">
+<meta property="og:url" content="https://lanyangzhi.github.io/2022/07/02/%E4%B8%AD%E6%96%87%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8F%92%E4%BB%B6-%E6%9C%89%E5%A4%9F%E9%99%8D%E6%99%BA/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Jenks流水线操作SpringBoot项目Mysql故障：com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowedMysqlServer version: 8.0.27 解决方案：在链接后面加入allowPublicKeyRetrieval=t">
+<meta property="og:description" content="起因在挑选 Markdown 插件的时候看到了这篇文章：给你的 Markdown 挑挑刺——语法检查器入门与进阶里面提到了中英文之间应当留有空白。  于是乎我下载了文章中推荐的插件 AutoCorrect，也就是今天的主角。 主角登场我像往常一样打开 VSC 开始写 Bug，发现自己的字体不见了。  我寻思我也妹干啥啊，赶快打开设置看看，看了好像也没什么问题。本来也不该有问题，因为我前几天用得好好">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-10T04:01:54.000Z">
-<meta property="article:modified_time" content="2022-06-04T06:38:38.095Z">
+<meta property="og:image" content="http://101.35.250.50:9080/i/2022/07/02/62bfb115288e0.png">
+<meta property="og:image" content="http://101.35.250.50:9080/i/2022/07/02/62bfb6fd9c8f7.png">
+<meta property="og:image" content="http://101.35.250.50:9080/i/2022/07/02/62bfb946521ad.png">
+<meta property="og:image" content="http://101.35.250.50:9080/i/2022/07/02/62bfbb553f420.png">
+<meta property="og:image" content="http://101.35.250.50:9080/i/2022/07/02/62bfbd3119fea.png">
+<meta property="og:image" content="http://101.35.250.50:9080/i/2022/07/02/62bfbdb694c9b.png">
+<meta property="article:published_time" content="2022-07-02T02:13:47.000Z">
+<meta property="article:modified_time" content="2022-07-02T02:13:47.000Z">
 <meta property="article:author" content="Lan">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://101.35.250.50:9080/i/2022/07/02/62bfb115288e0.png">
 
 
-<link rel="canonical" href="https://lanyangzhi.github.io/2022/04/10/K8s%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-5/">
+<link rel="canonical" href="https://lanyangzhi.github.io/2022/07/02/%E4%B8%AD%E6%96%87%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8F%92%E4%BB%B6-%E6%9C%89%E5%A4%9F%E9%99%8D%E6%99%BA/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://lanyangzhi.github.io/2022/04/10/K8s%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-5/","path":"2022/04/10/K8s学习笔记-5/","title":"K8s学习笔记-5"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://lanyangzhi.github.io/2022/07/02/%E4%B8%AD%E6%96%87%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8F%92%E4%BB%B6-%E6%9C%89%E5%A4%9F%E9%99%8D%E6%99%BA/","path":"2022/07/02/中文格式化插件-有够降智/","title":"中文格式化插件--有够降智"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>K8s学习笔记-5 | Hexo</title>
+<title>中文格式化插件--有够降智 | Hexo</title>
   
 
 
@@ -116,7 +123,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Jenks%E6%B5%81%E6%B0%B4%E7%BA%BF%E6%93%8D%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">Jenks流水线操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SpringBoot%E9%A1%B9%E7%9B%AEMysql%E6%95%85%E9%9A%9C%EF%BC%9Acom-mysql-jdbc-exceptions-jdbc4-MySQLNonTransientConnectionException-Public-Key-Retrieval-is-not-allowed"><span class="nav-number">1.1.</span> <span class="nav-text">SpringBoot项目Mysql故障：com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B5%B7%E5%9B%A0"><span class="nav-number">1.</span> <span class="nav-text">起因</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E8%A7%92%E7%99%BB%E5%9C%BA"><span class="nav-number">1.1.</span> <span class="nav-text">主角登场</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%BE%E5%A3%B0"><span class="nav-number">1.2.</span> <span class="nav-text">尾声</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E8%AE%B0"><span class="nav-number">1.3.</span> <span class="nav-text">后记</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -175,7 +182,7 @@
   
 
   <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://lanyangzhi.github.io/2022/04/10/K8s%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-5/">
+    <link itemprop="mainEntityOfPage" href="https://lanyangzhi.github.io/2022/07/02/%E4%B8%AD%E6%96%87%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8F%92%E4%BB%B6-%E6%9C%89%E5%A4%9F%E9%99%8D%E6%99%BA/">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -188,12 +195,12 @@
     </span>
     
     <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="K8s学习笔记-5 | Hexo">
+      <meta itemprop="name" content="中文格式化插件--有够降智 | Hexo">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          K8s学习笔记-5
+          中文格式化插件--有够降智
         </h1>
 
         <div class="post-meta-container">
@@ -204,14 +211,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2022-04-10 12:01:54" itemprop="dateCreated datePublished" datetime="2022-04-10T12:01:54+08:00">2022-04-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-06-04 14:38:38" itemprop="dateModified" datetime="2022-06-04T14:38:38+08:00">2022-06-04</time>
+      <time title="创建时间：2022-07-02 10:13:47" itemprop="dateCreated datePublished" datetime="2022-07-02T10:13:47+08:00">2022-07-02</time>
     </span>
 
   
@@ -224,14 +224,20 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="Jenks流水线操作"><a href="#Jenks流水线操作" class="headerlink" title="Jenks流水线操作"></a>Jenks流水线操作</h1><h2 id="SpringBoot项目Mysql故障：com-mysql-jdbc-exceptions-jdbc4-MySQLNonTransientConnectionException-Public-Key-Retrieval-is-not-allowed"><a href="#SpringBoot项目Mysql故障：com-mysql-jdbc-exceptions-jdbc4-MySQLNonTransientConnectionException-Public-Key-Retrieval-is-not-allowed" class="headerlink" title="SpringBoot项目Mysql故障：com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed"></a>SpringBoot项目Mysql故障：<code>com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed</code></h2><p>MysqlServer version: 8.0.27</p>
-<p>解决方案：在链接后面加入<code>allowPublicKeyRetrieval=true</code></p>
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">datasource:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">com.zaxxer.hikari.HikariDataSource</span></span><br><span class="line">  <span class="attr">driver-class-name:</span> <span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">jdbc:mysql://118.195.146.98:32381/yygh_manage?characterEncoding=utf-8&amp;useSSL=false&amp;allowPublicKeyRetrieval=true</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>运行nodejs项目时发生错误</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Module build failed (from ./node_modules/sass-loader/lib/loader.js): Error: ENOENT: no such file or directory, scandir <span class="string">'C:\Users\DELL\Desktop\yygh\yygh-admin-master\node_modules\node-sass\vendor'</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>解决方法:参考<a target="_blank" rel="noopener" href="https://github.com/deepthan/blog-angular/issues/38">这个页面</a></p>
+        <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>在挑选 Markdown 插件的时候看到了这篇文章：<a target="_blank" rel="noopener" href="https://sspai.com/prime/story/markdown-linter-a-primer">给你的 Markdown 挑挑刺——语法检查器入门与进阶</a><br>里面提到了中英文之间应当留有空白。</p>
+<p><img src="http://101.35.250.50:9080/i/2022/07/02/62bfb115288e0.png" alt="this is image" title="盘古之白"></p>
+<p>于是乎我下载了文章中推荐的插件 <a target="_blank" rel="noopener" href="https://github.com/huacnlee/autocorrect">AutoCorrect</a>，也就是今天的主角。</p>
+<h2 id="主角登场"><a href="#主角登场" class="headerlink" title="主角登场"></a>主角登场</h2><p>我像往常一样打开 VSC 开始写 Bug，发现自己的字体不见了。</p>
+<p><img src="http://101.35.250.50:9080/i/2022/07/02/62bfb6fd9c8f7.png" alt="字体！离了你我该怎么活啊！" title="字体！离了你我该怎么活啊！"></p>
+<p>我寻思我也妹干啥啊，赶快打开设置看看，看了好像也没什么问题。本来也不该有问题，因为我前几天用得好好的嘛！</p>
+<p><img src="http://101.35.250.50:9080/i/2022/07/02/62bfb946521ad.png" alt="字体" title="好像也没问题？"></p>
+<p>上网搜了一下，说是带空格的字体名要加单引号表示这不是两种不同的字体。<br>好吧？虽然我之前不加单引号也能用，但既然人家这么说了我就加上。<br>好了好了！谢谢你！路边的超人！</p>
+<p><img src="http://101.35.250.50:9080/i/2022/07/02/62bfbb553f420.png" title="谢谢你！泰罗！"></p>
+<p>等一等！中文还不对！中文…我的中文…你带我……<br>查已安装字体，比较字体名，也看不出什么问题，只能手打一次设置，但中文字体还是不生效。多次尝试后发现了一些端倪<br><img src="http://101.35.250.50:9080/i/2022/07/02/62bfbd3119fea.png" title="设置时"></p>
+<p><img src="http://101.35.250.50:9080/i/2022/07/02/62bfbdb694c9b.png" title="窗口失焦后。还会发现逗号变成了全角的"></p>
+<p>看着华康方圆体和 W7 之间多出的空格，聪明的我一下子就想起之前装过的<code>AutoCorrect</code>插件！犯人就是你！于是用 notepad++把配置文件变成正常的</p>
+<h2 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h2><p>哎呦，谢天谢地了。没有字体我可怎么活啊！</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>为什么我没有打开设置面板，但是这个配置被自动格式化了呢？<br>为什么插件会对设置面板里的输入框也有效？这也是一种封装过的文本编辑器？</p>
 
     </div>
 
@@ -245,14 +251,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/04/05/K8s%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-4/" rel="prev" title="K8s学习笔记-4">
-                  <i class="fa fa-chevron-left"></i> K8s学习笔记-4
+                <a href="/2022/06/28/python%E8%B8%A9%E5%9D%91%E8%AE%B0/" rel="prev" title="python 踩坑记">
+                  <i class="fa fa-chevron-left"></i> python 踩坑记
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/06/04/%E5%88%A9%E7%94%A8%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-oss-%E6%8B%93%E5%B1%95%E8%BD%BB%E9%87%8F%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4/" rel="next" title="利用腾讯云对象存储(oss)拓展轻量应用服务器存储空间">
-                  利用腾讯云对象存储(oss)拓展轻量应用服务器存储空间 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

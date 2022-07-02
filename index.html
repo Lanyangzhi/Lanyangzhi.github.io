@@ -124,7 +124,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -160,6 +160,230 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://lanyangzhi.github.io/2022/07/02/%E4%B8%AD%E6%96%87%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8F%92%E4%BB%B6-%E6%9C%89%E5%A4%9F%E9%99%8D%E6%99%BA/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lan">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/07/02/%E4%B8%AD%E6%96%87%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8F%92%E4%BB%B6-%E6%9C%89%E5%A4%9F%E9%99%8D%E6%99%BA/" class="post-title-link" itemprop="url">中文格式化插件--有够降智</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-07-02 10:13:47" itemprop="dateCreated datePublished" datetime="2022-07-02T10:13:47+08:00">2022-07-02</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>在挑选 Markdown 插件的时候看到了这篇文章：<a target="_blank" rel="noopener" href="https://sspai.com/prime/story/markdown-linter-a-primer">给你的 Markdown 挑挑刺——语法检查器入门与进阶</a><br>里面提到了中英文之间应当留有空白。</p>
+<p><img src="http://101.35.250.50:9080/i/2022/07/02/62bfb115288e0.png" alt="this is image" title="盘古之白"></p>
+<p>于是乎我下载了文章中推荐的插件 <a target="_blank" rel="noopener" href="https://github.com/huacnlee/autocorrect">AutoCorrect</a>，也就是今天的主角。</p>
+<h2 id="主角登场"><a href="#主角登场" class="headerlink" title="主角登场"></a>主角登场</h2><p>我像往常一样打开 VSC 开始写 Bug，发现自己的字体不见了。</p>
+<p><img src="http://101.35.250.50:9080/i/2022/07/02/62bfb6fd9c8f7.png" alt="字体！离了你我该怎么活啊！" title="字体！离了你我该怎么活啊！"></p>
+<p>我寻思我也妹干啥啊，赶快打开设置看看，看了好像也没什么问题。本来也不该有问题，因为我前几天用得好好的嘛！</p>
+<p><img src="http://101.35.250.50:9080/i/2022/07/02/62bfb946521ad.png" alt="字体" title="好像也没问题？"></p>
+<p>上网搜了一下，说是带空格的字体名要加单引号表示这不是两种不同的字体。<br>好吧？虽然我之前不加单引号也能用，但既然人家这么说了我就加上。<br>好了好了！谢谢你！路边的超人！</p>
+<p><img src="http://101.35.250.50:9080/i/2022/07/02/62bfbb553f420.png" title="谢谢你！泰罗！"></p>
+<p>等一等！中文还不对！中文…我的中文…你带我……<br>查已安装字体，比较字体名，也看不出什么问题，只能手打一次设置，但中文字体还是不生效。多次尝试后发现了一些端倪<br><img src="http://101.35.250.50:9080/i/2022/07/02/62bfbd3119fea.png" title="设置时"></p>
+<p><img src="http://101.35.250.50:9080/i/2022/07/02/62bfbdb694c9b.png" title="窗口失焦后。还会发现逗号变成了全角的"></p>
+<p>看着华康方圆体和 W7 之间多出的空格，聪明的我一下子就想起之前装过的<code>AutoCorrect</code>插件！犯人就是你！于是用 notepad++把配置文件变成正常的</p>
+<h2 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h2><p>哎呦，谢天谢地了。没有字体我可怎么活啊！</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>为什么我没有打开设置面板，但是这个配置被自动格式化了呢？<br>为什么插件会对设置面板里的输入框也有效？这也是一种封装过的文本编辑器？</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://lanyangzhi.github.io/2022/06/28/python%E8%B8%A9%E5%9D%91%E8%AE%B0/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lan">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/28/python%E8%B8%A9%E5%9D%91%E8%AE%B0/" class="post-title-link" itemprop="url">python 踩坑记</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-28 07:33:02" itemprop="dateCreated datePublished" datetime="2022-06-28T07:33:02+08:00">2022-06-28</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>用 python 给 QQ 机器人写了一个订阅微博更新的插件，原理是读取微博 API 里最新一条微博的发送时间转储，然后在下一次运行时和新的读取结果进行比较<br>遇到了一个小小的问题：<code>readline()</code>在读取文件 (末尾？) 时似乎会添加一些东西</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> jsonpath</span><br><span class="line">url=<span class="string">'https://m.weibo.cn/api/container/getIndex?page=1&amp;count=1&amp;containerid=1076031797798792'</span></span><br><span class="line">response=requests.get(url)</span><br><span class="line">obj=json.loads(response.text)</span><br><span class="line">wbdate=jsonpath.jsonpath(obj,<span class="string">'$..created_at'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 类型转换&gt;数组转为字符串</span></span><br><span class="line">wbdate=<span class="built_in">str</span>(wbdate)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 写入缓冲区</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'cache.txt'</span>,<span class="string">'w'</span>,encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    fp.write(wbdate)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取缓冲</span></span><br><span class="line">a=<span class="built_in">open</span>(<span class="string">'cache.txt'</span>,<span class="string">'r'</span>,encoding=<span class="string">'utf-8'</span>).readline().strip()</span><br><span class="line">b=wbdate</span><br><span class="line"><span class="built_in">print</span>(a,b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 比较结果</span></span><br><span class="line"><span class="keyword">if</span> a <span class="keyword">is</span> b:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"good!"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'bad'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出结果</span></span><br><span class="line">(base) C:\Users\DELL\Desktop\&gt;python file.py</span><br><span class="line">[<span class="string">'Mon Jun 27 15:33:41 +0800 2022'</span>] [<span class="string">'Mon Jun 27 15:33:41 +0800 2022'</span>]</span><br><span class="line">bad</span><br></pre></td></tr></tbody></table></figure>
+
+<p>折腾了一晚上，加<code>strip()</code>、<code>split()</code>、<code>rstrip()</code>都不好使，最后发现要用<code>==</code>而不是<code>is</code></p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 读取缓冲</span></span><br><span class="line">a=<span class="built_in">open</span>(<span class="string">'cache.txt'</span>,<span class="string">'r'</span>,encoding=<span class="string">'utf-8'</span>).readline().strip()</span><br><span class="line">b=wbdate</span><br><span class="line"><span class="built_in">print</span>(a,b)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 比较结果</span></span><br><span class="line"><span class="keyword">if</span> a <span class="keyword">is</span> b:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"good!"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'bad'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出结果</span></span><br><span class="line">(base) C:\Users\DELL\Desktop\&gt;python file.py</span><br><span class="line">[<span class="string">'Mon Jun 27 15:33:41 +0800 2022'</span>] [<span class="string">'Mon Jun 27 15:33:41 +0800 2022'</span>]</span><br><span class="line">good!</span><br></pre></td></tr></tbody></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://lanyangzhi.github.io/2022/06/25/%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8-oss%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E8%AE%BE%E7%BD%AE%E7%A7%81%E6%9C%89%E5%9B%BE%E5%BA%8A/">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lan">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/25/%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8-oss%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E8%AE%BE%E7%BD%AE%E7%A7%81%E6%9C%89%E5%9B%BE%E5%BA%8A/" class="post-title-link" itemprop="url">腾讯云轻量服务器+oss 对象存储设置私有图床</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-25 17:51:13" itemprop="dateCreated datePublished" datetime="2022-06-25T17:51:13+08:00">2022-06-25</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>突发奇想想要自己做一个图床给网站用，于是去搜方案。有如下几种<br><a href="ABC">Oracle 免费 VPS</a>、</p>
+<h1 id="使用闲置"><a href="#使用闲置" class="headerlink" title="使用闲置"></a>使用闲置</h1><p>##配置腾讯云服务<br>###</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -360,6 +584,13 @@
 
       <time title="创建时间：2022-04-10 12:01:54" itemprop="dateCreated datePublished" datetime="2022-04-10T12:01:54+08:00">2022-04-10</time>
     </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-06-04 14:38:38" itemprop="dateModified" datetime="2022-06-04T14:38:38+08:00">2022-06-04</time>
+    </span>
 
   
 </div>
@@ -371,7 +602,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
+          <h1 id="Jenks流水线操作"><a href="#Jenks流水线操作" class="headerlink" title="Jenks流水线操作"></a>Jenks流水线操作</h1><h2 id="SpringBoot项目Mysql故障：com-mysql-jdbc-exceptions-jdbc4-MySQLNonTransientConnectionException-Public-Key-Retrieval-is-not-allowed"><a href="#SpringBoot项目Mysql故障：com-mysql-jdbc-exceptions-jdbc4-MySQLNonTransientConnectionException-Public-Key-Retrieval-is-not-allowed" class="headerlink" title="SpringBoot项目Mysql故障：com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed"></a>SpringBoot项目Mysql故障：<code>com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key Retrieval is not allowed</code></h2><p>MysqlServer version: 8.0.27</p>
+<p>解决方案：在链接后面加入<code>allowPublicKeyRetrieval=true</code></p>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">datasource:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">com.zaxxer.hikari.HikariDataSource</span></span><br><span class="line">  <span class="attr">driver-class-name:</span> <span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">jdbc:mysql://118.195.146.98:32381/yygh_manage?characterEncoding=utf-8&amp;useSSL=false&amp;allowPublicKeyRetrieval=true</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>运行nodejs项目时发生错误</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Module build failed (from ./node_modules/sass-loader/lib/loader.js): Error: ENOENT: no such file or directory, scandir <span class="string">'C:\Users\DELL\Desktop\yygh\yygh-admin-master\node_modules\node-sass\vendor'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>解决方法:参考<a target="_blank" rel="noopener" href="https://github.com/deepthan/blog-angular/issues/38">这个页面</a></p>
+
       
     </div>
 
@@ -726,205 +965,9 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://lanyangzhi.github.io/2022/03/10/Docker%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8Nginx%E5%8F%8D%E4%BB%A3forsaken-mail/">
-
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lan">
-    </span>
-
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hexo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/03/10/Docker%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8Nginx%E5%8F%8D%E4%BB%A3forsaken-mail/" class="post-title-link" itemprop="url">Docker环境使用Nginx反代forsaken-mail</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-03-10 12:56:06" itemprop="dateCreated datePublished" datetime="2022-03-10T12:56:06+08:00">2022-03-10</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>买了一台服务器一直空着，放着不用就浪费了，想跑个东西玩，学一下Docker操作。<br>选了个比较感兴趣的临时邮箱来玩，结果遇到一堆别人没有的问题，记录一下。</p>
-<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h2><p><a target="_blank" rel="noopener" href="https://docs.docker.com/engine/install/">查看Docker官方文档</a></p>
-<h2 id="安装并启动forsaken-mail"><a href="#安装并启动forsaken-mail" class="headerlink" title="安装并启动forsaken-mail"></a>安装并启动forsaken-mail</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ubuntu@ubuntu:~$ docker run --name=forsaken-mail -p 25:25 -p 3000:3000 -d denghongcai/forsaken-mail</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="安装并启动Nginx"><a href="#安装并启动Nginx" class="headerlink" title="安装并启动Nginx"></a>安装并启动Nginx</h2><p>创建/home/<em>username</em>/nginx/conf.d</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ubuntu@ubuntu:~$ <span class="built_in">mkdir</span> /home/ubuntu/nginx/conf.d</span><br></pre></td></tr></tbody></table></figure>
-
-<p>安装并启动Nginx</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ubuntu@ubuntu:~$ docker run --name=nginx -p 80:80 -v /home/ubuntu/nginx/conf.d:/etc/nginx/conf.d -d nginx</span><br></pre></td></tr></tbody></table></figure>
-
-<p>-v 命令的作用是映射</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/home/ubuntu/nginx/conf.d</span><br></pre></td></tr></tbody></table></figure>
-
-<p>到</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/nginx/conf.d</span><br></pre></td></tr></tbody></table></figure>
-
-<div class="note info"><p>请注意：即便Nginx因为配置错误自动退出时被映射的文件(夹)仍然会被同步，无需重新创建容器。</p>
-</div>
-
-<h2 id="配置Nginx"><a href="#配置Nginx" class="headerlink" title="配置Nginx"></a>配置Nginx</h2><p>Nginx会创建一个叫default.conf的文件，可以直接对它进行操作。<br>或者使用DigitalOcean的<a target="_blank" rel="noopener" href="https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN">NGINXConfig</a><br>我选择了直接对default.conf进行操作。</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">server {</span><br><span class="line">    listen                         <span class="number">80</span>;</span><br><span class="line">    # 关闭ipv6，也可以不关，大概</span><br><span class="line">    #listen                        [::]:<span class="number">80</span>;</span><br><span class="line">    server_name                    localhost;</span><br><span class="line"></span><br><span class="line">    # 这个是默认关掉的</span><br><span class="line">    #access_log  /<span class="keyword">var</span>/log/nginx/host.<span class="property">access</span>.<span class="property">log</span>  main;</span><br><span class="line"></span><br><span class="line">    location / {</span><br><span class="line">        root                       /usr/share/nginx/html;</span><br><span class="line">        index                      index.<span class="property">html</span> index.<span class="property">htm</span>;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    location /mail/ {</span><br><span class="line">        # 试错时候加上的，我也不知道干嘛用的，总之服务跑起来了就别动了</span><br><span class="line">        proxy_set_header           X-<span class="title class_">Real</span>-<span class="variable constant_">IP</span> $remote_addr;</span><br><span class="line">        proxy_set_header           X-<span class="title class_">Forwarded</span>-<span class="title class_">For</span> $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_set_header           <span class="title class_">Host</span> $http_host;</span><br><span class="line">        proxy_set_header           X-<span class="title class_">NginX</span>-<span class="title class_">Proxy</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">        proxy_http_version <span class="number">1.1</span>;</span><br><span class="line">        proxy_set_header           <span class="title class_">Upgrade</span> $http_upgrade;</span><br><span class="line">        proxy_set_header           <span class="title class_">Connection</span> <span class="string">"upgrade"</span>;</span><br><span class="line"></span><br><span class="line">        # 代理核心</span><br><span class="line">        proxy_pass                 <span class="attr">http</span>:<span class="comment">//172.17.0.3:3000/;</span></span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
-
-<p>大部分教程写到这里就结束了，让你在proxy_pass后面填上127.0.0.1或者别的什么，然后你(我)就踩坑了;w;</p>
-<h3 id="Docker需要做的额外配置"><a href="#Docker需要做的额外配置" class="headerlink" title="Docker需要做的额外配置"></a>Docker需要做的额外配置</h3><p>如果你遇到了跟我一样的问题，在上一步卡住了的话，请往下看或者翻到底部拿完整代码。</p>
-<p><em>proxy_pass</em>后面跟的地址不能写127.0.0.1(localhost)，这样写会导致nginx访问<em>自己的</em>127.0.0.1，而不是宿主机的127.0.0.1。<br>要改变这一点，需要设置容器桥接访问宿主机网络。我这里使用了另一种方法，提取了docker分配给forsaken-mail的地址</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ubuntu@ubuntu:~$ docker inspect forsaken-mail</span><br><span class="line">            ***</span><br><span class="line">            <span class="string">"IPAddress"</span>: <span class="string">"172.17.0.3"</span>,</span><br><span class="line">            ***</span><br></pre></td></tr></tbody></table></figure>
-
-<p><em>proxy_pass</em>地址最后的斜杠<a href="about:blank">/</a>代表绝对地址和相对地址，一个示例:</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">location /mail/ {proxy_pass <span class="attr">http</span>:<span class="comment">//172.10.0.3:3000;}</span></span><br><span class="line">#会访问</span><br><span class="line"><span class="attr">http</span>:<span class="comment">//172.10.0.3:3000/mail/</span></span><br><span class="line"></span><br><span class="line">location /mail/ {proxy_pass <span class="attr">http</span>:<span class="comment">//172.10.0.3:3000/;}</span></span><br><span class="line">#会访问</span><br><span class="line"><span class="attr">http</span>:<span class="comment">//172.10.0.3:3000/</span></span><br></pre></td></tr></tbody></table></figure>
-
-<div class="note warning"><p><em>location</em>后面如果有波浪号<a href="about:blank">~</a>则<em>proxy_pass</em>后不能跟斜杠(/)，波浪号表示使用正则匹配。详见<a target="_blank" rel="noopener" href="http://nginx.org/en/docs/beginners_guide.html">Nginx官方文档</a>。</p>
-</div>
-
-<p>此时页面应该可以正常访问了…吗?<em>你还不能休息哦，博士</em></p>
-<p>页面的样式可能正常可能不正常，我不太了解为什么，刚重启forsaken-mail时会正常一会，过了一段时间就不正常了。<br>使用F12检查时会发现</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Failed</span> to load <span class="attr">resource</span>: the server responded <span class="keyword">with</span> a status <span class="keyword">of</span> <span class="number">404</span> (<span class="title class_">Not</span> <span class="title class_">Found</span>) app.<span class="property">css</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>在/nginx/conf.d的配置文件里加入</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">location ~ .*\.(js|css)?$ {</span><br><span class="line">    #转发js和css</span><br><span class="line">    proxy_pass              <span class="attr">http</span>:<span class="comment">//172.17.0.3:3000;</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后会遇到</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">GET</span> <span class="attr">http</span>:<span class="comment">//example.com/socket.io/ 404 (Not Found) socket.io.min.js:1</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>在/nginx/conf.d的配置文件里加入</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">location ~ ^/(node|socket\.<span class="property">io</span>) {</span><br><span class="line">    #转发websocket</span><br><span class="line">    proxy_pass             <span class="attr">http</span>:<span class="comment">//172.17.0.3:3000;</span></span><br><span class="line"></span><br><span class="line">    proxy_http_version     <span class="number">1.1</span>;</span><br><span class="line">    proxy_set_header       <span class="title class_">Upgrade</span> $http_upgrade;</span><br><span class="line">    proxy_set_header       <span class="title class_">Connection</span> <span class="string">"upgrade"</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>终于！你的邮箱可以正常工作了！可喜可贺！</p>
-<h2 id="完整版"><a href="#完整版" class="headerlink" title="完整版"></a>完整版</h2><p>排版很差，嘴下留情;w;</p>
-<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">server {</span><br><span class="line">    listen       <span class="number">80</span>;</span><br><span class="line">#   listen  [::]:<span class="number">80</span>;</span><br><span class="line">    server_name  localhost;</span><br><span class="line"></span><br><span class="line">    #access_log  /<span class="keyword">var</span>/log/nginx/host.<span class="property">access</span>.<span class="property">log</span>  main;</span><br><span class="line"></span><br><span class="line">    location / {</span><br><span class="line">        root   /usr/share/nginx/html;</span><br><span class="line">        index  index.<span class="property">html</span> index.<span class="property">htm</span>;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line"> location /mail/ {</span><br><span class="line"></span><br><span class="line">        proxy_set_header X-<span class="title class_">Real</span>-<span class="variable constant_">IP</span> $remote_addr;</span><br><span class="line">        proxy_set_header X-<span class="title class_">Forwarded</span>-<span class="title class_">For</span> $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_set_header <span class="title class_">Host</span> $http_host;</span><br><span class="line">        proxy_set_header X-<span class="title class_">NginX</span>-<span class="title class_">Proxy</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">     proxy_http_version <span class="number">1.1</span>;</span><br><span class="line">        proxy_set_header <span class="title class_">Upgrade</span> $http_upgrade;</span><br><span class="line">        proxy_set_header <span class="title class_">Connection</span> <span class="string">"upgrade"</span>;</span><br><span class="line"></span><br><span class="line">     proxy_pass                <span class="attr">http</span>:<span class="comment">//172.17.0.3:3000/;</span></span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"> location ~ ^/(node|socket\.<span class="property">io</span>) {</span><br><span class="line">#  expires      12h;</span><br><span class="line">  proxy_pass <span class="attr">http</span>:<span class="comment">//172.17.0.3:3000;</span></span><br><span class="line"></span><br><span class="line">  proxy_http_version <span class="number">1.1</span>;</span><br><span class="line">  proxy_set_header <span class="title class_">Upgrade</span> $http_upgrade;</span><br><span class="line">  proxy_set_header <span class="title class_">Connection</span> <span class="string">"upgrade"</span>;</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"> location ~ .*\.(js|css)?$ {</span><br><span class="line">#  expires      12h;</span><br><span class="line">  proxy_pass <span class="attr">http</span>:<span class="comment">//172.17.0.3:3000;</span></span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    #error_page  <span class="number">404</span>              /<span class="number">404.</span>html;</span><br><span class="line"></span><br><span class="line">    # redirect server error pages to the <span class="keyword">static</span> page /50x.<span class="property">html</span></span><br><span class="line">    #</span><br><span class="line">    error_page   <span class="number">500</span> <span class="number">502</span> <span class="number">503</span> <span class="number">504</span>  /50x.<span class="property">html</span>;</span><br><span class="line">    location = /50x.<span class="property">html</span> {</span><br><span class="line">        root   /usr/share/nginx/html;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    # proxy the <span class="variable constant_">PHP</span> scripts to <span class="title class_">Apache</span> listening on <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">80</span></span><br><span class="line">    #</span><br><span class="line">    #location ~ \.<span class="property">php$</span> {</span><br><span class="line">    #    proxy_pass   <span class="attr">http</span>:<span class="comment">//127.0.0.1;</span></span><br><span class="line">    #}</span><br><span class="line"></span><br><span class="line">    # pass the <span class="variable constant_">PHP</span> scripts to <span class="title class_">FastCGI</span> server listening on <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">9000</span></span><br><span class="line">    #</span><br><span class="line">    #location ~ \.<span class="property">php$</span> {</span><br><span class="line">    #    root           html;</span><br><span class="line">    #    fastcgi_pass   <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">9000</span>;</span><br><span class="line">    #    fastcgi_index  index.<span class="property">php</span>;</span><br><span class="line">    #    fastcgi_param  <span class="variable constant_">SCRIPT_FILENAME</span>  /scripts$fastcgi_script_name;</span><br><span class="line">    #    include        fastcgi_params;</span><br><span class="line">    #}</span><br><span class="line"></span><br><span class="line">    # deny access to .<span class="property">htaccess</span> files, <span class="keyword">if</span> <span class="title class_">Apache</span><span class="string">'s document root</span></span><br><span class="line"><span class="string">    # concurs with nginx'</span>s one</span><br><span class="line">    #</span><br><span class="line">    #location ~ /\.<span class="property">ht</span> {</span><br><span class="line">    #    deny  all;</span><br><span class="line">    #}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope="" itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://lanyangzhi.github.io/2022/03/09/hello-world/">
-
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lan">
-    </span>
-
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-      <meta itemprop="description" content="">
-    </span>
-    
-    <span hidden="" itemprop="post" itemscope="" itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hexo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/03/09/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2022-03-09 21:42:42 / 修改时间：21:19:51" itemprop="dateCreated datePublished" datetime="2022-03-09T21:42:42+08:00">2022-03-09</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 </div>
   </main>
